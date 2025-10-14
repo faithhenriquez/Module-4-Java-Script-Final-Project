@@ -9,11 +9,11 @@ const movieListEl = document.querySelector(".movie-list");
 async function main () {
     const movies = await fetch ("http://www.omdbapi.com/?s=fast&apikey=fde10d57")
     const moviesData = await movies.json ();
-    movieListEl.innerHTML = moviesData.map((movie) => userHTML(movie)).join ("");
+    movieListEl.innerHTML = moviesData.Search.map((movie) => movieHTML(movie)).join ("");
 }
 main ();
-        function userHTML(movie) {
-       `<div class="movie-card">
+        function movieHTML(movie) {
+        return `<div class="movie-card">
            <div class="movie-card__container">
               <h3>${movie.title}</h4>
                 <p><b>Year:</b> ${movie.year} </p>

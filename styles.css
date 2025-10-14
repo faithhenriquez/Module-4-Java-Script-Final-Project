@@ -420,17 +420,17 @@ footer {
 }
 
 
-.user-list {
+.movie-list {
   width: auto;
   display: flex;
   flex-wrap: wrap;
 }
 
-.user {
+.movie {
   width: 50%;
 }
 
-.user-card {
+.movie-card {
   background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   margin: 10px;
@@ -439,11 +439,11 @@ footer {
   border-radius: 10px;
 }
 
-.user-card:hover {
+.movie-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.user-card__container {
+.movie-card__container {
   padding: 2px 16px;
 }
 @keyframes rotate {
