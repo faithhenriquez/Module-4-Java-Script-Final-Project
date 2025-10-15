@@ -12,13 +12,13 @@ async function main () {
     movieListEl.innerHTML = moviesData.Search.map((movie) => movieHTML(movie)).join ("");
 }
 main ();
-        function movieHTML(movie) {
+        function movieHTML(movies) {
         return `<div class="movie-card">
            <div class="movie-card__container">
-              <h3>${movie.title}</h4>
-                <p><b>Year:</b> ${movie.year} </p>
-                <p><b>Poster:</b> <a href="https://${movie.website}" target="_blank">${movie.website}e</a></p>
+              <h3>${movies.title}</h4>
+                <p><b>Year:</b> ${movies.year} </p>
+                <p><b>Poster:</b> <a href="https://${movies.poster}" target="_blank">${movies.poster}e</a></p>
             </div>
           </div>`;
     
-}
+}s
