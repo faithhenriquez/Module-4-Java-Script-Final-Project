@@ -4,15 +4,18 @@
 // Show images
 // Skeleton Loading State
 
+
 const movieListEl = document.querySelector(".movie-list");
 const moviesWrapper = document.querySelector(".movies");
 
+
 async function main () {
+    moviesWrapper.classList += ('movies__loading');  
     const movies = await fetch ("http://www.omdbapi.com/?s=fast&apikey=fde10d57")
     const moviesData = await movies.json ();
     movieListEl.innerHTML = moviesData.Search.map((movie) => movieHTML(movie)).join ("");
     
-  moviesWrapper.classList += ('movies__loading');  
+  
   if (!movies) {
     movies = await fetch ("http://www.omdbapi.com/?s=fast&apikey=fde10d57");
   }
