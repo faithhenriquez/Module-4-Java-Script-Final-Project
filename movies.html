@@ -10,9 +10,7 @@
   <script defer src="index.js"></script>
   <script defer src="movie.js"></script>
 </head>
-
-<body id="books__body">
-  <section>
+ <section>
     <nav>
       <div class="nav__container">
         <img class="logo" src="assets/moviecamera.jpeg" alt="">
@@ -44,6 +42,10 @@
     </nav>
   </section>
 
+
+ 
+ <section>
+  <body id="movies__body">
   <main id="movies__main">
     <section>
       <div class="container">
@@ -53,7 +55,7 @@
               All <span class="blue">Movies</span>
             </h2>
             <label class="post__search--label">
-              <div class="movie__search">
+              <div class="movie__search" onclick="searchBooks(event)">
                         <input type="text" class="movie__search--input" placeholder="Browse our movies" >
                         <button class="movie__search--btn">Search</button>
                         </input>
@@ -61,10 +63,12 @@
             </label>
           </div>
         </div>
-        <div class="movies">
+        <div class="movies movies__loading">
             <i class="fas fa-spinner movies__loading--spinner"></i>
         </div>
-        <div class="container">
+        </div>
+    </section>
+    <div class="container">
     <div class="row">
       <div class="movie-list">
         <div class="movie">
@@ -78,9 +82,12 @@
         </div>
       </div>
     </div>
-  </div>
-    </section>
+  </div>   
   </main>
+  </section>
+  <section>
+</body>
+  
  <footer>
     <div class="container">
       <div class="row row__column">
@@ -99,7 +106,7 @@
       </div>
     </div>
   </footer>
- 
+ </section>
 </body>
 
 
